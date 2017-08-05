@@ -13,7 +13,6 @@
 get_header(); ?>
 
 <div class="wrap">
-
 	<?php if ( have_posts() ) : ?>
 		<header class="page-header">
 			<?php

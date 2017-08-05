@@ -15,4 +15,4 @@ set :stage_url, 'http://dev.thecreativetemp.ca/deploy'
 server '184.107.41.73', user: 'thecrea2', roles: %w(web app db)
 
 # The deploy path to the website on this environment's server.
-set :deploy_to, '/public_html/dev.thecreativetemp.ca/deploy'
+set :deploy_to, '~/public_html/dev.thecreativetemp.ca/deploy'
