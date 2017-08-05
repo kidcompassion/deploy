@@ -19,7 +19,7 @@ set :wp_localurl, 'http://localhost:8888/deploy'
 
 # An identifying name for the application to be used by Capistrano
 set :application, 'deploy'
-set :repo_url, 'https://github.com/kidcompassion/deploy.git'
+set :repo_url, 'git@github.com:kidcompassion/deploy.git'
 
 
 ################################################################################
@@ -29,7 +29,9 @@ set :repo_url, 'https://github.com/kidcompassion/deploy.git'
 set :log_level, :debug
 set :keep_releases, 2
 set :use_sudo, false
-set :ssh_options, forward_agent: true
+set :ssh_options, {
+  forward_agent: true
+}
 
 
 
